@@ -5,3 +5,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    padding: 20px;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Gravitas One", serif;
+    background: linear-gradient(
+        to left,
+        rgba(7, 27, 82, 1) 0%,
+        rgba(0, 128, 128, 1) 100%
+    );
+}
+
+h1 {
+    color: rgb(9, 211, 211);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

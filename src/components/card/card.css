@@ -1,5 +1,8 @@
 .card {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #9eebcf;
     border-width: 0.25rem;
@@ -12,4 +15,16 @@
 
 .card:hover {
     transform: scale(1.05);
+}
+
+.robotImage {
+    margin-block-end: 10px;
+}
+
+.robotName {
+    font-size: 1rem;
+}
+
+.robotEmail {
+    font-size: 0.7rem;
 }

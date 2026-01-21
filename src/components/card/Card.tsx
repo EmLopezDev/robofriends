@@ -10,12 +10,13 @@ function Card({ id, name, email }: CardType) {
     return (
         <div className="card">
             <img
-                src={`https://robohash.org/${id}?200x200`}
-                alt=""
+                className="robotImage"
+                src={`https://robohash.org/${id}`}
+                alt={`${name} profile picture`}
             />
             <div>
-                <h2>{name}</h2>
-                <p>{email}</p>
+                <p className="robotName">{name}</p>
+                <p className="robotEmail">{email}</p>
             </div>
         </div>
     );

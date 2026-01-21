@@ -1,5 +1,6 @@
 import Card from "../card/Card.tsx";
 import { type RobotType } from "../../data/robots.tsx";
+import "./cardlist.css";
 
 type CardListType = {
     robots: RobotType[];
@@ -7,7 +8,7 @@ type CardListType = {
 
 function CardList({ robots }: CardListType) {
     return (
-        <div>
+        <div className="cardList">
             {robots.map(({ id, name, email }: RobotType) => {
                 return (
                     <Card
