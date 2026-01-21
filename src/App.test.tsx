@@ -54,7 +54,7 @@ describe("App Component", () => {
 
         // Verify fetch was called with correct URL
         expect(globalThis.fetch).toHaveBeenCalledWith(
-            "https://jsonplaceholder.typicode.com/users"
+            "https://jsonplaceholder.typicode.com/users",
         );
         expect(globalThis.fetch).toHaveBeenCalledTimes(1);
     });
@@ -65,7 +65,7 @@ describe("App Component", () => {
             () =>
                 new Promise(() => {
                     // Never resolves to keep loading state
-                })
+                }),
         );
 
         render(<App />);
